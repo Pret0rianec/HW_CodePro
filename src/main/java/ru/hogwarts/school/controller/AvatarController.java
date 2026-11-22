@@ -63,5 +63,4 @@ public class AvatarController {
         List<Avatar> avatars = avatarService.getAllAvatars(page, size);
         return ResponseEntity.ok(avatars);
     }
-
 }
