@@ -95,5 +95,6 @@ public class StudentController {
     public List<Student> getLastFiveStudents() {
         return studentService.getLastFiveStudents();
     }
+
 }
 
