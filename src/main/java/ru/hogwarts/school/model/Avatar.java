@@ -15,7 +15,7 @@ public class Avatar {
     private long fileSize;
     private String mediaType;
 
-     @Column(columnDefinition = "bytea")
+    @Column(columnDefinition = "bytea")
     @JsonIgnore
     private byte[] data;
 
