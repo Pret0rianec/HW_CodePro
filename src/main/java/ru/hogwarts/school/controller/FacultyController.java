@@ -75,4 +75,5 @@ public class FacultyController {
         Collection<Student> students = facultyService.getByIdFaculty(id).getStudents();
         return ResponseEntity.ok(students);
     }
+
 }

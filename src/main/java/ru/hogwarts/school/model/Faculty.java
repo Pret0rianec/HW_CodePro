@@ -56,4 +56,5 @@ public class Faculty {
     public void setStudents(Set<Student> students) {
         this.students = students;
     }
+
 }
