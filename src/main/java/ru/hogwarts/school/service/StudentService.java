@@ -59,11 +59,14 @@ public class StudentService {
 
     public Double getAverageAgeOfStudents() {
         Double averageAge = studentRepository.getAverageAgeOfStudents();
-        return averageAge != null ? averageAge : 0.0;
+        if (averageAge != null) {
+            return averageAge;
+        } else {
+            return 0.0;
+        }
     }
 
     public List<Student> getLastFiveStudents() {
         return studentRepository.getLastFiveStudents();
     }
-
 }

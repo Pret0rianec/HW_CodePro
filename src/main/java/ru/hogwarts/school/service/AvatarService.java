@@ -65,5 +65,4 @@ public class AvatarService {
         PageRequest pageRequest = PageRequest.of(page - 1, size);
         return avatarRepository.findAll(pageRequest).getContent();
     }
-
 }
